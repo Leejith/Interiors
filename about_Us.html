@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <script>
+        // JavaScript for Menu Toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+    <div class="main">
+        <header class="bg-white">
+            <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+                <div class="flex lg:flex-1 items-center">
+                    <a href="#" class="-m-1.5 p-1.5 flex items-center">
+                        <img class="h-8 w-auto mr-2" src="./Meubel House_Logos-05.png" alt="">
+                        <span class="font-montserrat font-bold text-[28px] leading-[34.13px]">IOS INTERIORS</span>
+                    </a>
+                </div>
+                
+
+                <!-- Toggle Button (Hamburger) -->
+                <div class="flex lg:hidden">
+                    <button type="button" onclick="toggleMenu()"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden lg:flex lg:gap-x-12">
+                    <a href="./home.html" class="text-sm font-semibold text-gray-900">Home</a>
+                    <a href="./about_Us.html" class="text-sm font-semibold text-gray-900">about</a>
+                    <a href="#" class="text-sm font-semibold text-gray-900">project</a>
+                    <a href="#" class="text-sm font-semibold text-gray-900">service</a>
+                    <a href="#" class="text-sm font-semibold text-gray-900">contact</a>
+                </div>
+
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                    <button
+                        class="bg-[#FFE6D0] hover:bg-[#FFCBA4] text-black font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300">
+                        Get Started
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu (Hidden by Default) -->
+            <div id="mobile-menu" class="lg:hidden fixed inset-0 z-10 hidden">
+                <!-- Background Backdrop -->
+                <div class="fixed inset-0 bg-black opacity-50" onclick="toggleMenu()"></div>
+
+                <!-- Mobile Menu Content -->
+                <div class="fixed inset-y-0 right-0 w-full max-w-sm bg-white px-6 py-6 sm:ring-1 sm:ring-gray-900/10">
+                    <div class="flex items-center justify-between">
+                        <a href="#" class="-m-1.5 p-1.5">
+                            <span class="sr-only">Your Company</span>
+                            <img class="h-8 w-auto"
+                                src="./Meubel House_Logos-05.png" alt="">
+                        </a>
+
+                        <!-- Close Button -->
+                        <button onclick="toggleMenu()" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                            <span class="sr-only">Close menu</span>
+                            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <div class="mt-6">
+                        <a href="./home.html"
+                            class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Home</a>
+                        <a href="./about_Us.html"
+                            class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">About</a>
+                        <a href="#"
+                            class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Projects</a>
+                        <a href="#"
+                            class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Services</a>
+                        <a href="#"
+                            class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Contact</a>
+                    </div>
+
+                    <div class="py-6">
+                        <button
+                            class="bg-[#FFE6D0] hover:bg-[#FFCBA4] text-black font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <header class="relative">
+            <img src="./Rectangle 1.png" alt="Background" class="w-full h-64 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-black">
+                <h1 class="text-3xl font-bold">ABOUT Us</h1>
+                <nav class="text-sm mt-2">
+                    <a href="#" class="text-black-300">Home</a> > <span class="text-gray-400">About</span>
+                </nav>
+            </div>
+        </header>
+    
+        <section class="text-center py-12 px-6">
+            <h3 class="text-gray-500 text-sm uppercase">What We Do?</h3>
+            <h2 class="text-2xl md:text-3xl font-semibold mt-2">The service we offer is specifically designed to meet your
+                needs.</h2>
+    
+            <div class="grid md:grid-cols-3 gap-8 mt-10">
+                <div class="bg-white p-6  text-center">
+                    <img src="./image 112.png" alt="Lamp" class="w-full h-100 bject-cover ">
+                    <h3 class="mt-4 text-lg font-semibold">Eidea of</h3>
+                    <p class="text-gray-500 mt-2">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta
+                        gravida at eget.</p>
+                    <a href="#" class="text-gray-600 font-semibold mt-3 inline-block">Learn More &gt;</a>
+                </div>
+                <div class="bg-white  p-6 text-center">
+                    <img src="./image 113.png" alt="Plant" class="w-full h-90 object-cover ">
+                    <h3 class="mt-4 text-lg font-semibold">Felis eget</h3>
+                    <p class="text-gray-500 mt-2">Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue
+                        laoreet.</p>
+                    <a href="#" class="text-gray-600 font-semibold mt-3 inline-block">Learn More &gt;</a>
+                </div>
+                <div class="bg-white p-6  text-center">
+                    <img src="./image 114.png" alt="Wooden Lamp" class="w-full h-100 object-cover ">
+                    <h3 class="mt-4 text-lg font-semibold">In egestas</h3>
+                    <p class="text-gray-500 mt-2">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    <a href="#" class="text-gray-600 font-semibold mt-3 inline-block">Learn More &gt;</a>
+                </div>
+            </div>
+        </section>
+    
+        <section class="max-w-7xl mx-auto py-16 px-6">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <img src="./image 115.png" alt="Modern Room" class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <h3 class="text-gray-500 uppercase font-semibold tracking-wide">Why Choose Us?</h3>
+                    <h2 class="text-3xl font-bold text-gray-800 mt-2">We bring solutions to make life easier.</h2>
+                    <ul class="mt-4 space-y-3 text-gray-600">
+                        <div class="mt-6 space-y-2">
+                            <details class="p-4  ">
+                                <summary class="font-semibold cursor-pointer">Professional Design</summary>
+                                <p class="text-gray-600 mt-2">Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                                    condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus
+                                    sit amet fermentum.</p>
+                            </details>
+    
+                            <details class="p-4  rounded-lg">
+                                <summary class="font-semibold cursor-pointer">Top-Notch Support</summary>
+                                <p class="text-gray-600 mt-2">Praesent commodo cursus magna, vel scelerisque nisl
+                                    consectetur et.</p>
+                            </details>
+    
+                            <details class="p-4 ">
+                                <summary class="font-semibold cursor-pointer">Header and Slider Options</summary>
+                                <p class="text-gray-600 mt-2">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+                                    auctor.</p>
+                            </details>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Company Facts -->
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-2">
+    
+    
+                <div class="mt-10 grid  lg:grid-cols-4 gap-10 ">
+                    <div>
+                        <h3 class="text-yellow-500 uppercase font-semibold text-sm">Company Facts</h3>
+                        <h2 class="text-3xl font-bold text-gray-800 mt-2">We are proud of our design team</h2>
+                        <p class="text-gray-600 mt-2">Just sit back and relax while we take care of your business needs for
+                            you.</p>
+                    </div>
+    
+                    <div class="flex flex-col items-center">
+                        <img src="./div.icon (2).svg" alt="Completed Projects" class="w-12 h-12 mb-2 bg-pink rounded">
+                        <span class="text-4xl font-bold text-black-500">1000+</span>
+                        <p class="text-gray-600">Completed Projects</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src=".//div.icon (1).svg" alt="Happy Customers" class="w-12 h-12 mb-2">
+                        <span class="text-4xl font-bold text-black-500">50K+</span>
+                        <p class="text-gray-600">Happy Customers</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="./div.icon.svg" alt="Awards Won" class="w-12 h-12 mb-2">
+                        <span class="text-4xl font-bold text-black-500">20+</span>
+                        <p class="text-gray-600">Awards Won</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Team Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+                    <div class="bg-white p-6 rounded-lg shadow-lg ">
+                        <img src="./te1.jpg.png" alt="Team Member" class=" rounded-full w-24">
+                        <h3 class="text-lg font-semibold mt-4">Corris Ambady</h3>
+                        <p class="text-gray-500 text-sm">Financial Analyst</p>
+                        <p class="text-gray-600">Fermentum massa justo sit amet risus morbi leo.</p>
+                        <div class="flex  space-x-2 mt-4">
+                            
+                            <img src="./Icon (2).png" alt="Twitter" class="w-6 h-6">
+                            <img src="./Icon (1).png" alt="Facebook" class="w-6 h-6">
+                            <img src="./Icon.png" alt="volli" class="w-6 h-6">
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg ">
+                        <img src="./te2.jpg.png" alt="Team Member" class=" rounded-full w-24">
+                        <h3 class="text-lg font-semibold mt-4">Cary Zamora</h3>
+                        <p class="text-gray-500 text-sm">Marketing Specialist</p>
+                        <p class="text-gray-600">Fermentum massa justo sit amet risus morbi leo.</p>
+                        <div class="flex  space-x-2 mt-4">
+                            
+                            <img src="./Icon (2).png" alt="Twitter" class="w-6 h-6">
+                            <img src="./Icon (1).png" alt="Facebook" class="w-6 h-6">
+                            <img src="./Icon.png" alt="volli" class="w-6 h-6">
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg ">
+                        <img src="./te3.jpg.png" alt="Team Member" class=" rounded-full w-24">
+                        <h3 class="text-lg font-semibold mt-4">Nikolas Braoten</h3>
+                        <p class="text-gray-500 text-sm">Sales Manager</p>
+                        <p class="text-gray-600">Fermentum massa justo sit amet risus morbi leo.</p>
+                        <div class="flex  space-x-2 mt-4">
+                            
+                            <img src="./Icon (2).png" alt="Twitter" class="w-6 h-6">
+                            <img src="./Icon (1).png" alt="Facebook" class="w-6 h-6">
+                            <img src="./Icon.png" alt="volli" class="w-6 h-6">
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg ">
+                        <img src="./te4.jpg.png" alt="Team Member" class=" rounded-full w-24">
+                        <h3 class="text-lg font-semibold mt-4">Jackie Sanders</h3>
+                        <p class="text-gray-500 text-sm">Investment Planner</p>
+                        <p class="text-gray-600">Fermentum massa justo sit amet risus morbi leo.</p>
+                        <div class="flex  space-x-2 mt-4">
+                            
+                            <img src="./Icon (2).png" alt="Twitter" class="w-6 h-6">
+                            <img src="./Icon (1).png" alt="Facebook" class="w-6 h-6">
+                            <img src="./Icon.png" alt="volli" class="w-6 h-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Clients Section -->
+        <section class="py-10 bg-white text-center">
+            <p class="text-gray-500">Trusted by over 2K+ clients across the world</p>
+            <div class="flex justify-center mt-4 space-x-6">
+                <span class=""><img src="./c1.png.png" alt="Team Member" class=" rounded-full w-24"></span>
+                <span class=""><img src="./c2.png.png" alt="Team Member" class=" rounded-full w-24"></span>
+                <span class=""><img src="./c3.png.png" alt="Team Member" class=" rounded-full w-24"></span>
+                <span class=""><img src="./c4.png.png" alt="Team Member" class=" rounded-full w-24"></span>
+                <span class=""><img src="./c5.png.png" alt="Team Member" class=" rounded-full w-24"></span>
+                <span class=""><img src="./c6.png.png" alt="Team Member" class=" rounded-full w-24"></span>
+                <span class=" "><img src="./c7.png.png" alt="Team Member" class=" rounded-full w-24"></span>
+                
+            </div>
+        </section>
+
+
+        <div class="footer bg-white py-10 mt-10">
+
+            <div
+                class="container mx-auto px-6 flex flex-col items-center text-center lg:text-center lg:flex-row lg:justify-center">
+                <div class="w-full max-w-3xl bg-white shadow-lg rounded-lg p-6"
+                    style="background: linear-gradient(0deg, #FFFFFF, #FFE6D0AD), linear-gradient(0deg, rgba(255, 230, 208, 0.68), rgba(255, 230, 208, 0.68));">
+
+                    <div class="mt-8 text-center text-gray-500 text-sm">
+                        Join our community.
+                    </div>
+                    <h2 class="text-2xl lg:text-4xl font-bold text-gray-900 mb-4 text-center">We are trusted by over
+                        5000+ clients.</h2>
+                    <h2 class="text-2xl lg:text-4xl font-bold text-gray-900 mb-4 text-center">Join them now and grow
+                        your business.</h2>
+
+                    <a href="#"
+                        class="inline-block bg-[#FFE6D0] text-gray-900 p-3 rounded-lg hover:bg-[#FFD5A1] transition">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer bg-white text-gray-800 py-10">
+                <div class="container mx-auto px-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+                        <!-- Column 1: About Us -->
+                        <div class="flex flex-col items-center">
+                            <a href="#" class="-m-1.5 p-1.5 flex items-center mb-4">
+                                <img class="h-8 w-auto mr-2" src="./Meubel House_Logos-05.png" alt="">
+                                <span class="font-montserrat font-bold text-[18px] leading-[34.13px]">IOS INTERIORS</span>
+                            </a>
+                        
+                            <div class="container mx-auto px-6 text-center text-gray-600">
+                                <p>&copy; 2023 Sandbox. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                        
+                        
+
+                        <!-- Column 2: Services -->
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">Moonshine St. 14/15</a>
+                                </li>
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">Light City,London,United Kingdom</a></li>
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">info@emai.com</a>
+                                </li>
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">00 (123) 456 78 90</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 3: Quick Links -->
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Learn More</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">About Us</a>
+                                </li>
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">Our Story</a>
+                                </li>
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">Projects</a></li>
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">Terms of Use</a></li>
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">Privacy policy</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 4: Call-to-Action -->
+                        <div class="flex flex-col justify-center items-start">
+                            <h3 class="text-xl font-semibold mb-4">Our Newsletter</h3>
+                            <p class="text-sm text-gray-600 mb-4">Subscribe to our newsletter to get our news & deals delivered to you</p>
+                            <div class="flex w-full">
+                                <input type="email" placeholder="Email Address"
+                                    class="w-full p-3 rounded-l-lg text-gray-900 focus:outline-none shadow-[0_4px_6px_#1E22280A] border-[1px] border-[#083C8212]">
+                                <button
+                                    class="bg-[#FFE6D0] text-gray-900 p-3 rounded-r-lg hover:bg-[#FFD5A1] transition">Join</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+</body>
+
+
+</html>

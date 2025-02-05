@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <script>
+        // JavaScript for Menu Toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+    <div class="main">
+        <header class="bg-white">
+            <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+                <div class="flex lg:flex-1 items-center">
+                    <a href="#" class="-m-1.5 p-1.5 flex items-center">
+                        <img class="h-8 w-auto mr-2" src="./Meubel House_Logos-05.png" alt="">
+                        <span class="font-montserrat font-bold text-[28px] leading-[34.13px]">IOS INTERIORS</span>
+                    </a>
+                </div>
+                
+
+                <!-- Toggle Button (Hamburger) -->
+                <div class="flex lg:hidden">
+                    <button type="button" onclick="toggleMenu()"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden lg:flex lg:gap-x-12">
+                    <a href="./home.html" class="text-sm font-semibold text-gray-900">Home</a>
+                    <a href="./about_Us.html" class="text-sm font-semibold text-gray-900">about</a>
+                    <a href="#" class="text-sm font-semibold text-gray-900">project</a>
+                    <a href="#" class="text-sm font-semibold text-gray-900">service</a>
+                    <a href="#" class="text-sm font-semibold text-gray-900">contact</a>
+                </div>
+
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                    <button
+                        class="bg-[#FFE6D0] hover:bg-[#FFCBA4] text-black font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300">
+                        Get Started
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu (Hidden by Default) -->
+            <div id="mobile-menu" class="lg:hidden fixed inset-0 z-10 hidden">
+                <!-- Background Backdrop -->
+                <div class="fixed inset-0 bg-black opacity-50" onclick="toggleMenu()"></div>
+
+                <!-- Mobile Menu Content -->
+                <div class="fixed inset-y-0 right-0 w-full max-w-sm bg-white px-6 py-6 sm:ring-1 sm:ring-gray-900/10">
+                    <div class="flex items-center justify-between">
+                        <a href="#" class="-m-1.5 p-1.5">
+                            <span class="sr-only">Your Company</span>
+                            <img class="h-8 w-auto"
+                                src="./Meubel House_Logos-05.png" alt="">
+                        </a>
+
+                        <!-- Close Button -->
+                        <button onclick="toggleMenu()" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                            <span class="sr-only">Close menu</span>
+                            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <div class="mt-6">
+                        <a href="./home.html"
+                            class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Home</a>
+                        <a href="./about_Us.html"
+                            class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">About</a>
+                        <a href="#"
+                            class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Projects</a>
+                        <a href="#"
+                            class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Services</a>
+                        <a href="#"
+                            class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Contact</a>
+                    </div>
+
+                    <div class="py-6">
+                        <button
+                            class="bg-[#FFE6D0] hover:bg-[#FFCBA4] text-black font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="relative h-screen flex justify-end items-center">
+            <!-- Background Image -->
+            <img
+              src="./scandinavian-interior-mockup-wall-decal-background 1.png" 
+              alt="Interior Design"
+              class="absolute inset-0 h-full w-full object-cover -z-10"
+            />
+          
+            <!-- Text Section -->
+            <div class="relative p-8 rounded-lg shadow-lg max-w-md transform -translate-x-20" style="background-color: #fff3e3; ">
+                <p class="text-sm text-gray-500 uppercase tracking-wide">New Arrival</p>
+                <h1 class="text-3xl font-bold text-gray-800 mt-2 mb-4" style="color:gry; ">
+                  Discover Our <br /> New Collection
+                </h1>
+                <p class="text-gray-600 mb-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+                </p>
+                <button 
+                  class="text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-300 transition"
+                  style="background-color: #ffe6d0;">
+                  Book Now
+                </button>
+              </div>
+          </div>
+          
+        
+          <div class="bg-white">
+            
+            <section class="text-center py-10">
+              <h2 class="text-2xl  text-gray-800">Here are a few reasons why our customers choose ios.</h2>
+              <div class="flex flex-wrap justify-center gap-8 mt-8">
+               
+                <div class="bg-100 p-2 rounded-lg shadow-md flex items-center space-x-4 w-64">
+                  <img src="./image 107.svg" alt="Beds" class="w-10 h-10">
+                  <div>
+                    <h3 class="font-semibold text-lg text-gray-700">Beds</h3>
+                    <p class="text-sm text-gray-600">Duis mollis commodo luctus cursus commodo tortor mauris.</p>
+                  </div>
+                </div>
+               
+                <div class="bg-100 p-2 rounded-lg shadow-md flex items-center space-x-4 w-64">
+                  <img src="./image 108.png" alt="Sofa" class="w-10 h-10">
+                  <div>
+                    <h3 class="font-semibold text-lg text-gray-700">Sofa</h3>
+                    <p class="text-sm text-gray-600">Vivamus sagittis lacus augue fusce dapibus tellus nibh.</p>
+                  </div>
+                </div>
+              
+                <div class="bg-100 p-2 rounded-lg shadow-md flex items-center space-x-4 w-64">
+                  <img src="./image 109.svg" alt="Lamp" class="w-10 h-10">
+                  <div>
+                    <h3 class="font-semibold text-lg text-gray-700">Lamp</h3>
+                    <p class="text-sm text-gray-600">Vestibulum ligula porta felis maecenas faucibus mollis.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          
+            <!-- Middle Section -->
+            <section class="py-10">
+              <div class="text-center mb-6">
+                <h2 class="text-xl font-bold text-gray-800">Browse The Range</h2>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 mt-3">
+                <div class="rounded-lg overflow-hidden text-center fw-bold">
+                  <img src="./image 106.png" alt="Dining" class="w-full h-100 object-cover rounded-lg">
+                  <div class="p-4">
+                    <h3 class="font-semibold text-lg text-gray-700">Dining</h3>
+                  </div>
+                </div>
+                <div class="rounded-lg overflow-hidden text-center fw-bold">
+                  <img src="./image 100.png" alt="Living" class="w-full h-100 object-cover rounded-lg">
+                  <div class="p-4">
+                    <h3 class="font-semibold text-lg text-gray-700">Living</h3>
+                  </div>
+                </div>
+                <div class="rounded-lg overflow-hidden text-center fw-bold">
+                  <img src="./image 101.png" alt="Bedroom" class="w-full h-100 object-cover rounded-lg">
+                  <div class="p-4">
+                    <h3 class="font-semibold text-lg text-gray-700">Bedroom</h3>
+                  </div>
+                </div>
+              </div>
+            </section>
+          
+            <!-- Bottom Section -->
+            <section class="bg-[#fff3e3] py-10">
+              <div class="flex flex-col md:flex-row items-center px-6 gap-6">
+                <div class="md:w-1/2 text-center md:text-left">
+                  <p class="text-sm font-bold uppercase text-gray-500">End of Season Sale</p>
+                  <h2 class="text-3xl font-bold text-gray-800 mt-2">Up To 60% Off</h2>
+                  <p class="text-gray-600 mt-4">We bring solutions to make life easier for our customers.</p>
+                </div>
+                <div class="md:w-1/2">
+                  <img src="./image 110.png" alt="Sofa" class="  w-full">
+                </div>
+              </div>
+            </section>
+    
+            <section class="py-16 bg-white">
+                <div class="container mx-auto px-6 lg:px-20">
+                  <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+                    <!-- Image Grid -->
+                    <div class="relative w-full max-w-lg mx-auto">
+                        <!-- Top Right Image -->
+                        <img src="./img_01-3.jpg.png" alt="Living Room" 
+                            class="absolute bottom-0 right-0 w-3/4 rounded-xl shadow-lg">
+                    
+                        <!-- Middle Left Image -->
+                        <img src="./img_02-2.jpg.png" alt="Interior" 
+                            class="absolute bottom-3/5 right-3/4 top-1/5 w-3/5 rounded-xl shadow-lg">
+                    
+                        <!-- Bottom Right Image -->
+                        <img src="./img_03-2.jpg.png" alt="Furniture" 
+                        class="absolute bottom-2/5 right-1/4 w-2/5 rounded-xl shadow-lg">
+                        
+                    </div>
+                    
+
+                    <!-- Text Content -->
+                    <div>
+                      <h2 class="text-4xl font-bold mb-4">What We Do!</h2>
+                      <p class="text-gray-600 mb-6">
+                        It is a long established fact that a reader will be distracted by readable content of a page when looking at its layout. 
+                      </p>
+                      <ul class="list-none pl-5 text-gray-600 mb-6">
+                        <li class="flex items-center space-x-2">
+                            <img class="h-4 w-4" src="./List → Item → f_icon.svg.svg" alt="Icon">
+                            <span> World Wide Donation</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <img class="h-4 w-4" src="./List → Item → f_icon.svg.svg" alt="Icon">
+                            <span> Various industrial Applications.</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <img class="h-4 w-4" src="./List → Item → f_icon.svg.svg" alt="Icon">
+                            <span> Providing Solutions For Construction, Management</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <img class="h-4 w-4" src="./List → Item → f_icon.svg.svg" alt="Icon">
+                            <span> Engineers design and build the structure</span>
+                        </li>
+                    </ul>
+
+                      <h2 class="text-4xl font-bold mb-4">What You Can Do in!</h2>
+                      <ul class="list-none pl-5 text-gray-600 mb-6">
+                        <li class="flex items-center space-x-2">
+                            <img class="h-4 w-4" src="./List → Item → f_icon.svg.svg" alt="Icon">
+                            <span> Certified & Awards winner</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <img class="h-4 w-4" src="./List → Item → f_icon.svg.svg" alt="Icon">
+                            <span> Work with energetic team</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <img class="h-4 w-4" src="./List → Item → f_icon.svg.svg" alt="Icon">
+                            <span> Just Because You Work Hard You’ll Be Successful.</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <img class="h-4 w-4" src="./List → Item → f_icon.svg.svg" alt="Icon">
+                            <span> For all your construction needs!</span>
+                        </li>
+                    </ul>
+
+                      <button class="bg-orange-400 text-white px-6 py-3 rounded-lg hover:bg-orange-500 transition">
+                        More Explore
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+              </section>
+            
+              <!-- Our Products Section -->
+              <section class="py-16 bg-white-50">
+                <div class="container mx-auto px-6 lg:px-20">
+                  <h2 class="text-4xl font-bold text-center mb-12">Our Products</h2>
+                  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Product Cards -->
+                    <div class="bg-gray-100 pb-3  text-center">
+                      <img src="./Images.png" alt="Product 1" class="w-full h-70 object-cover mb-4">
+                      <h3 class="text-lg font-semibold">Slytherine</h3>
+                      <p class="text-gray-600">Minimalist Chair</p>
+                    </div>
+                    <div class="bg-gray-100   pb-3 text-center">
+                      <img src="./Images (1).png" alt="Product 2" class="w-full h-70 object-cover  mb-4">
+                      <h3 class="text-lg font-semibold">Lolito</h3>
+                      <p class="text-gray-600">Luxury Sofa Set</p>
+                    </div>
+                    <div class="bg-gray-100  pb-3 text-center">
+                      <img src="./Images (2).png" alt="Product 3" class="w-full h-70 object-cover  mb-4">
+                      <h3 class="text-lg font-semibold">Reepto</h3>
+                      <p class="text-gray-600">Custom Table and Chair</p>
+                    </div>
+                    <div class="bg-gray-100   pb-3 text-center">
+                        <img src="./Images (3).png" alt="Product 2" class="w-full h-70 object-cover  mb-4">
+                        <h3 class="text-lg font-semibold">Lolito</h3>
+                        <p class="text-gray-600">Luxury Sofa Set</p>
+                    </div>
+                    <div class="bg-gray-100   pb-3 text-center">
+                        <img src="./Image 5.png" alt="Product 2" class="w-full h-70 object-cover  mb-4">
+                        <h3 class="text-lg font-semibold">GRifo</h3>
+                        <p class="text-gray-600">night lamp</p>
+                    </div>
+                    <div class="bg-gray-100   pb-3 text-center">
+                        <img src="./image 6.png" alt="Product 2" class="w-full h-70 object-cover  mb-4">
+                        <h3 class="text-lg font-semibold">muggo</h3>
+                        <p class="text-gray-600">small mug</p>
+                    </div>
+                    <div class="bg-gray-100   pb-3 text-center">
+                        <img src="./image 7.png" alt="Product 2" class="w-full h-70 object-cover  mb-4">
+                        <h3 class="text-lg font-semibold">pingk</h3>
+                        <p class="text-gray-600">cute bed Set</p>
+                    </div>
+                    <div class="bg-gray-100  pb-3 text-center">
+                      <img src="./image 8.png" alt="Product 4" class="w-full h-70 object-cover  mb-4">
+                      <h3 class="text-lg font-semibold">Potty</h3>
+                      <p class="text-gray-600">Minimalist Flower Pot</p>
+                    </div>
+                  </div>
+                  <div class="text-center mt-8">
+                    <button class="bg-orange-400 text-white px-6 py-3 rounded-lg hover:bg-orange-500 transition">
+                      Show More
+                    </button>
+                  </div>
+                </div>
+              </section>
+            
+              <!-- Gallery Section -->
+              <section class="min-h-screen bg-white flex items-center py-8">
+                <div class="container mx-auto px-4 lg:px-16">
+                    <h2 class="text-3xl font-bold text-center mb-6">#FuniroFurniture</h2>
+                    <div class="grid grid-cols-3 gap-4 auto-rows-auto">
+                        
+                        <!-- First Column (2 rows, each with 2 images) -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="./Rectangle 36.png" alt="Gallery 1" class="shadow-lg object-cover w-1/2 h-80">
+                            <img src="./Rectangle 38.png" alt="Gallery 4" class=" shadow-lg object-cover w-100 h-100 mt-[200px] ml-[-30px]  scale-150">
+                            <img src="./Rectangle 37.png" alt="Gallery 6" class=" shadow-lg object-cover w-full h-100">
+                            <img src="./Rectangle 39.png" alt="Gallery 7" class="shadow-lg object-cover w-full h-auto scale-110">
+                        </div>
+            
+                        <!-- Second Column (1 large image in center) -->
+                        <div class="flex items-center justify-center">
+                            <img src="./Rectangle 40.png" alt="Gallery 2" class=" shadow-lg object-cover w-full h-auto scale-90">
+                        </div>
+            
+                        <!-- Third Column (4 stacked images) -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="./Rectangle 43.png" alt="Gallery 1" class="shadow-lg object-cover w-full h-auto mt-[150px] scale-110">
+                            <img src="./Rectangle 45.png" alt="Gallery 4" class=" shadow-lg object-cover w-full mt-[70px] h-auto">
+                            <img src="./Rectangle 41.png" alt="Gallery 6" class=" shadow-lg object-cover w-full h-auto mt-[-70px] ml-[-25px] scale-75">
+                            <img src="./Rectangle 44.png" alt="Gallery 7" class=" shadow-lg object-cover w-full h-auto mt-[-35px] ml-[-25px] scale-125">
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+            
+                       
+            
+            
+          </div>
+
+
+
+        <div class="footer bg-white py-10 mt-10">
+
+            <div
+                class="container mx-auto px-6 flex flex-col items-center text-center lg:text-center lg:flex-row lg:justify-center">
+                <div class="w-full max-w-3xl bg-white shadow-lg rounded-lg p-6"
+                    style="background: linear-gradient(0deg, #FFFFFF, #FFE6D0AD), linear-gradient(0deg, rgba(255, 230, 208, 0.68), rgba(255, 230, 208, 0.68));">
+
+                    <div class="mt-8 text-center text-gray-500 text-sm">
+                        Join our community.
+                    </div>
+                    <h2 class="text-2xl lg:text-4xl font-bold text-gray-900 mb-4 text-center">We are trusted by over
+                        5000+ clients.</h2>
+                    <h2 class="text-2xl lg:text-4xl font-bold text-gray-900 mb-4 text-center">Join them now and grow
+                        your business.</h2>
+
+                    <a href="#"
+                        class="inline-block bg-[#FFE6D0] text-gray-900 p-3 rounded-lg hover:bg-[#FFD5A1] transition">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer bg-white text-gray-800 py-10">
+                <div class="container mx-auto px-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+                        <!-- Column 1: About Us -->
+                        <div class="flex flex-col items-center">
+                            <a href="#" class="-m-1.5 p-1.5 flex items-center mb-4">
+                                <img class="h-8 w-auto mr-2" src="./Meubel House_Logos-05.png" alt="">
+                                <span class="font-montserrat font-bold text-[18px] leading-[34.13px]">IOS INTERIORS</span>
+                            </a>
+                        
+                            <div class="container mx-auto px-6 text-center text-gray-600">
+                                <p>&copy; 2023 Sandbox. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                        
+                        
+
+                        <!-- Column 2: Services -->
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">Moonshine St. 14/15</a>
+                                </li>
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">Light City,London,United Kingdom</a></li>
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">info@emai.com</a>
+                                </li>
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">00 (123) 456 78 90</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 3: Quick Links -->
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Learn More</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">About Us</a>
+                                </li>
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">Our Story</a>
+                                </li>
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">Projects</a></li>
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">Terms of Use</a></li>
+                                <li><a href="#" class="text-sm text-gray-600 hover:text-blue-600">Privacy policy</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 4: Call-to-Action -->
+                        <div class="flex flex-col justify-center items-start">
+                            <h3 class="text-xl font-semibold mb-4">Our Newsletter</h3>
+                            <p class="text-sm text-gray-600 mb-4">Subscribe to our newsletter to get our news & deals delivered to you</p>
+                            <div class="flex w-full">
+                                <input type="email" placeholder="Email Address"
+                                    class="w-full p-3 rounded-l-lg text-gray-900 focus:outline-none shadow-[0_4px_6px_#1E22280A] border-[1px] border-[#083C8212]">
+                                <button
+                                    class="bg-[#FFE6D0] text-gray-900 p-3 rounded-r-lg hover:bg-[#FFD5A1] transition">Join</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+</body>
+
+
+</html>
