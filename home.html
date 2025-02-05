@@ -13,7 +13,6 @@
 
 <body>
     <script>
-        // JavaScript for Menu Toggle
         function toggleMenu() {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
@@ -31,7 +30,6 @@
                 </div>
                 
 
-                <!-- Toggle Button (Hamburger) -->
                 <div class="flex lg:hidden">
                     <button type="button" onclick="toggleMenu()"
                         class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
@@ -60,12 +58,9 @@
                 </div>
             </nav>
 
-            <!-- Mobile Menu (Hidden by Default) -->
             <div id="mobile-menu" class="lg:hidden fixed inset-0 z-10 hidden">
-                <!-- Background Backdrop -->
                 <div class="fixed inset-0 bg-black opacity-50" onclick="toggleMenu()"></div>
 
-                <!-- Mobile Menu Content -->
                 <div class="fixed inset-y-0 right-0 w-full max-w-sm bg-white px-6 py-6 sm:ring-1 sm:ring-gray-900/10">
                     <div class="flex items-center justify-between">
                         <a href="#" class="-m-1.5 p-1.5">
@@ -74,7 +69,6 @@
                                 src="./Meubel House_Logos-05.png" alt="">
                         </a>
 
-                        <!-- Close Button -->
                         <button onclick="toggleMenu()" class="-m-2.5 rounded-md p-2.5 text-gray-700">
                             <span class="sr-only">Close menu</span>
                             <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -84,7 +78,6 @@
                         </button>
                     </div>
 
-                    <!-- Navigation Links -->
                     <div class="mt-6">
                         <a href="./home.html"
                             class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Home</a>
@@ -110,14 +103,12 @@
 
 
         <div class="relative h-screen flex justify-end items-center">
-            <!-- Background Image -->
             <img
               src="./scandinavian-interior-mockup-wall-decal-background 1.png" 
               alt="Interior Design"
               class="absolute inset-0 h-full w-full object-cover -z-10"
             />
           
-            <!-- Text Section -->
             <div class="relative p-8 rounded-lg shadow-lg max-w-md transform -translate-x-20" style="background-color: #fff3e3; ">
                 <p class="text-sm text-gray-500 uppercase tracking-wide">New Arrival</p>
                 <h1 class="text-3xl font-bold text-gray-800 mt-2 mb-4" style="color:gry; ">
@@ -167,7 +158,6 @@
               </div>
             </section>
           
-            <!-- Middle Section -->
             <section class="py-10">
               <div class="text-center mb-6">
                 <h2 class="text-xl font-bold text-gray-800">Browse The Range</h2>
@@ -195,7 +185,6 @@
               </div>
             </section>
           
-            <!-- Bottom Section -->
             <section class="bg-[#fff3e3] py-10">
               <div class="flex flex-col md:flex-row items-center px-6 gap-6">
                 <div class="md:w-1/2 text-center md:text-left">
@@ -213,24 +202,17 @@
                 <div class="container mx-auto px-6 lg:px-20">
                   <div class="grid lg:grid-cols-2 gap-12 items-center">
 
-                    <!-- Image Grid -->
                     <div class="relative w-full max-w-lg mx-auto">
-                        <!-- Top Right Image -->
                         <img src="./img_01-3.jpg.png" alt="Living Room" 
                             class="absolute bottom-0 right-0 w-3/4 rounded-xl shadow-lg">
-                    
-                        <!-- Middle Left Image -->
                         <img src="./img_02-2.jpg.png" alt="Interior" 
                             class="absolute bottom-3/5 right-3/4 top-1/5 w-3/5 rounded-xl shadow-lg">
-                    
-                        <!-- Bottom Right Image -->
                         <img src="./img_03-2.jpg.png" alt="Furniture" 
                         class="absolute bottom-2/5 right-1/4 w-2/5 rounded-xl shadow-lg">
                         
                     </div>
                     
 
-                    <!-- Text Content -->
                     <div>
                       <h2 class="text-4xl font-bold mb-4">What We Do!</h2>
                       <p class="text-gray-600 mb-6">
@@ -284,12 +266,10 @@
                 </div>
               </section>
             
-              <!-- Our Products Section -->
               <section class="py-16 bg-white-50">
                 <div class="container mx-auto px-6 lg:px-20">
                   <h2 class="text-4xl font-bold text-center mb-12">Our Products</h2>
                   <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Product Cards -->
                     <div class="bg-gray-100 pb-3  text-center">
                       <img src="./Images.png" alt="Product 1" class="w-full h-70 object-cover mb-4">
                       <h3 class="text-lg font-semibold">Slytherine</h3>
@@ -339,13 +319,11 @@
                 </div>
               </section>
             
-              <!-- Gallery Section -->
               <section class="min-h-screen bg-white flex items-center py-8">
                 <div class="container mx-auto px-4 lg:px-16">
                     <h2 class="text-3xl font-bold text-center mb-6">#FuniroFurniture</h2>
                     <div class="grid grid-cols-3 gap-4 auto-rows-auto">
                         
-                        <!-- First Column (2 rows, each with 2 images) -->
                         <div class="grid grid-cols-2 gap-4">
                             <img src="./Rectangle 36.png" alt="Gallery 1" class="shadow-lg object-cover w-1/2 h-80">
                             <img src="./Rectangle 38.png" alt="Gallery 4" class=" shadow-lg object-cover w-100 h-100 mt-[200px] ml-[-30px]  scale-150">
@@ -353,12 +331,9 @@
                             <img src="./Rectangle 39.png" alt="Gallery 7" class="shadow-lg object-cover w-full h-auto scale-110">
                         </div>
             
-                        <!-- Second Column (1 large image in center) -->
                         <div class="flex items-center justify-center">
                             <img src="./Rectangle 40.png" alt="Gallery 2" class=" shadow-lg object-cover w-full h-auto scale-90">
                         </div>
-            
-                        <!-- Third Column (4 stacked images) -->
                         <div class="grid grid-cols-2 gap-4">
                             <img src="./Rectangle 43.png" alt="Gallery 1" class="shadow-lg object-cover w-full h-auto mt-[150px] scale-110">
                             <img src="./Rectangle 45.png" alt="Gallery 4" class=" shadow-lg object-cover w-full mt-[70px] h-auto">
@@ -402,7 +377,6 @@
             <div class="footer bg-white text-gray-800 py-10">
                 <div class="container mx-auto px-6">
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-                        <!-- Column 1: About Us -->
                         <div class="flex flex-col items-center">
                             <a href="#" class="-m-1.5 p-1.5 flex items-center mb-4">
                                 <img class="h-8 w-auto mr-2" src="./Meubel House_Logos-05.png" alt="">
@@ -415,8 +389,6 @@
                         </div>
                         
                         
-
-                        <!-- Column 2: Services -->
                         <div>
                             <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
                             <ul class="space-y-2">
@@ -430,7 +402,6 @@
                             </ul>
                         </div>
 
-                        <!-- Column 3: Quick Links -->
                         <div>
                             <h3 class="text-xl font-semibold mb-4">Learn More</h3>
                             <ul class="space-y-2">
@@ -444,7 +415,6 @@
                             </ul>
                         </div>
 
-                        <!-- Column 4: Call-to-Action -->
                         <div class="flex flex-col justify-center items-start">
                             <h3 class="text-xl font-semibold mb-4">Our Newsletter</h3>
                             <p class="text-sm text-gray-600 mb-4">Subscribe to our newsletter to get our news & deals delivered to you</p>
